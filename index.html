@@ -9,6 +9,9 @@
 <body>
 <header class="page-header">
     <nav class="main-nav">
+        <a href="#" class="main-nav__logo">
+            <img src="img/logo.svg" alt="Логотип цветочного магазина" class="logo">
+        </a>
         <ul class="main-nav__list">
             <li class="main-nav__item">
                 <a href="#" class="main-nav__link">Каталог</a>
@@ -18,11 +21,6 @@
             </li>
             <li class="main-nav__item">
                 <a href="#" class="main-nav__link">Отзывы</a>
-            </li>
-            <li class="main-nav__item">
-                <a href="#" class="main-nav__link">
-                    <img src="img/logo.svg" alt="Логотип цветочного магазина" class="logo">
-                </a>
             </li>
             <li class="main-nav__item">
                 <a href="#" class="main-nav__link">Спецпредложения</a>
@@ -90,8 +88,8 @@
                      width="387">
             </li>
         </ul>
-        <button class="arrow-button arrow-button--left"></button>
-        <button class="arrow-button arrow-button--right"></button>
+        <button class="arrow-button arrow-button--left" type="button"></button>
+        <button class="arrow-button arrow-button--right" type="button"></button>
 
     </section>
     <section class="flowers-cards">
@@ -184,17 +182,17 @@
         <h2 class="reviews__title">Отзывы</h2>
         <ul class="reviews__list">
             <li class="review">
-                <p class="review__desc">Всё очень понравилось! Быстрое оформление заказа, выбор
-                    удобного времени доставки. Всем большое спасибо!</p>
-                <span class="review__name">Марина</span></li>
+                <blockquote class="review__desc">Всё очень понравилось! Быстрое оформление заказа, выбор
+                    удобного времени доставки. Всем большое спасибо!</blockquote>
+                <cite class="review__name">Марина</cite></li>
             <li class="review">
-                <p class="review__desc">Внимательные флористы, вежливые. Магазин находится прям
-                    рядом с метро. Букет очень понравился, буду ещё заказывать!</p>
-                <span class="review__name">Татьяна</span></li>
+                <blockquote class="review__desc">Внимательные флористы, вежливые. Магазин находится прям
+                    рядом с метро. Букет очень понравился, буду ещё заказывать!</blockquote>
+                <cite class="review__name">Татьяна</cite></li>
             <li class="review">
-                <p class="review__desc">Выбор букетов на любой вкус и цену. Бывают хорошие скидки,
-                    а флористы всегда помогут и точно соберут красивый букет!</p>
-                <span class="review__name">Ольга</span></li>
+                <blockquote class="review__desc">Выбор букетов на любой вкус и цену. Бывают хорошие скидки,
+                    а флористы всегда помогут и точно соберут красивый букет!</blockquote>
+                <cite class="review__name">Ольга</cite></li>
         </ul>
     </section>
     <section class="map-box">
@@ -213,12 +211,10 @@
     </section>
 </main>
 <footer class="page-footer">
+    <a href="#" class="footer-nav__link">
+        <img src="img/logo.svg" alt="Логотип цветочного магазина" class="logo">
+    </a>
     <ul class="footer-nav">
-        <li class="footer-nav__item">
-            <a href="#" class="footer-nav__link">
-                <img src="img/logo.svg" alt="Логотип цветочного магазина" class="logo">
-            </a>
-        </li>
         <li class="footer-nav__item">
             <a href="#" class="footer-nav__link">Каталог</a>
         </li>
