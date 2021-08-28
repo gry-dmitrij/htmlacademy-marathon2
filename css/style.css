@@ -111,7 +111,30 @@ html {
     box-sizing: inherit;
 }
 
+.main-banner {
+    display: flex;
+    margin: 0 auto 48px;
+    max-width: 1200px;
+    min-height: 480px;
+    justify-content: space-around;
+}
+
+.main-banner__column {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-banner__column--down {
+    justify-content: flex-end;
+}
+
+.main-banner__button {
+    align-self: flex-start;
+}
+
 .main-banner__title {
+    margin: 0 0 24px;
     font-family: "Playfair Display", "Times New Roman", serif;
     font-weight: 400;
     font-style: normal;
@@ -124,6 +147,7 @@ html {
 }
 
 .main-banner__desc {
+    margin: 0 0 64px;
     font-size: 24px;
     line-height: 30px;
 }
@@ -171,8 +195,58 @@ html {
     color: #ffffff;
 }
 
+.advantage-list {
+    margin: 0 auto 80px;
+    max-width: 1200px;
+    display: flex;
+
+    list-style: none;
+}
+
+.advantage {
+    position: relative;
+
+    padding-left: 95px;
+    width: 33%;
+}
+
+.advantage::before {
+    content: "";
+    position: absolute;
+
+    height: 52px;
+
+    background: no-repeat;
+}
+
+.advantage--delivery::before {
+    width: 82px;
+
+    left: 0;
+    top: 0;
+    background-image: url("../img/delivery-car.svg");
+}
+
+.advantage--fresh::before {
+    width: 52px;
+    left: 30px;
+    top: 0;
+    background-image: url("../img/fresh-bouquet.svg");
+}
+
+.advantage--photo::before {
+    width: 59px;
+    left: 20px;
+    top: 0;
+    background-image: url("../img/camera.svg");
+}
+
 .advantage__title {
     font-weight: 500;
+}
+
+.advantage__desc {
+    margin: 8px 0 0;
 }
 
 .slider-box__title {
