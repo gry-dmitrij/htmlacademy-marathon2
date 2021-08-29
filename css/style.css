@@ -249,23 +249,85 @@ html {
     margin: 8px 0 0;
 }
 
+.slider-box {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
 .slider-box__title {
+    width: 100%;
+    margin: 0 0 36px;
+
+    text-align: center;
     font-family: "Playfair Display", "Times New Roman", serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 48px;
 }
 
+.slider {
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.slide__left-box,
+.slide__img{
+    flex: 1 0 50%;
+}
+
+.slide__desc {
+    margin: 0 0 24px;
+}
+
+.slide__size {
+    margin: 0 0 24px;
+    display: block;
+}
+
 .slide__title {
+    display: block;
+    margin: 27px 0 20px;
+
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
 }
 
 .slide__price {
+    margin: 0 0 64px;
+    display: block;
+
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
+}
+
+.arrow-button {
+    width: 52px;
+    height: 10px;
+    display: block;
+
+    border: none;
+    outline: none;
+    background: center no-repeat;
+}
+
+.arrow-button--left {
+    margin-right: 10px;
+    background-image: url("../img/arrow-left.svg");
+}
+
+.arrow-button--right {
+    margin-left: 10px;
+    background-image: url("../img/arrow-right.svg");
 }
 
 .flower-card {
